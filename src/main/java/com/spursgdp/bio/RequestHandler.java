@@ -34,6 +34,7 @@ public class RequestHandler {
                     System.out.println("线程" + Thread.currentThread().getName() + " 接收数据：" + str);
                 } else {
                     //客户端断开连接，跳出循环，终止线程，在finally中会关闭socket
+                    System.out.println("线程" + Thread.currentThread().getName() + " 终止，客户端断开连接.");
                     break;
                 }
             }
